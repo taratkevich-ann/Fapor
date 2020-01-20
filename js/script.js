@@ -4,7 +4,7 @@ $(document).ready(function(){
         loop:true,
         margin:0,
         nav:true,
-        navText: [ '', ' ' ],
+        navText: [ '', '' ],
 
         responsive:{
             0:{

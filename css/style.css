@@ -98,6 +98,7 @@ p.blue_bg{
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 26px;
+    color: #24282f;
 }
 .management h2:after{
     display:block;
@@ -159,13 +160,111 @@ p.blue_bg{
 }
 
 
-footer{
-    background-color: #2b2f35;
-    border-top: solid 1px #2b2f35;
-    padding-top: 62px;
-    /*margin-bottom: 35px;*/
+
+.what_clients_say{
+    background-color: #f7f7f7;
+    padding-top: 93px;
+    padding-bottom: 93px;
+    text-align: center;
 }
- .f_about{
+.what_clients_say .container h2{
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 57px;
+    color: #24282f;
+}
+.what_clients_say .container h2:after{
+    content: '';
+    display: block;
+    width: 61px;
+    height: 2px;
+    background-color: #24282f;
+    margin: auto;
+    margin-top: 23px;
+}
+.what_clients_say .container img{
+    height: 72px;
+    width: 72px;
+    margin: auto;
+    margin-bottom: 29px;
+}
+.what_clients_say .container p{
+    max-width: 706px;
+    margin: auto;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    color: black;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 33px;
+}
+.what_clients_say .container h3{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    color: #b5a263;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+.what_clients_say .container p:last-child{
+    margin-bottom: 91px;
+}
+/*.owl-nav .owl-prev {
+    margin: -246px 5px;
+    position: absolute;
+    left: 0;
+    color: black!important;
+    font-family: "Font Awesome\ 5 Free"!important;
+    font-weight: 900!important;
+}
+.owl-nav .owl-prev:before{
+    content: "\f053";
+    display: inline-block;
+    color: black!important;
+}
+
+.owl-nav .owl-next {
+    color: black!important;
+    margin: -246px 5px;
+    font-family: "Font Awesome\ 5 Free"!important;
+    font-weight: 900!important;
+    position: absolute;
+    right: 0;
+}
+.owl-nav .owl-next:after{
+    content: "\f054";
+    display: inline-block;
+    color: black!important;
+}*/
+
+.owl-nav .owl-prev, .owl-nav .owl-next{
+    font-family: 'Font Awesome 5 Free'!important;
+    font-weight: 900!important;
+}
+.owl-nav .owl-next:before{
+    content: "\f053";
+    display: inline-block;
+    color: #24282f;
+    position: absolute;
+    left: 105px;
+    bottom: 231px;
+}
+.owl-nav .owl-prev:after {
+     content: "\f054";
+     display: inline-block;
+     color: #24282f;
+     position: absolute;
+     right: 105px;
+     bottom: 231px;
+ }
+footer{
+     background-color: #2b2f35;
+     border-top: solid 1px #2b2f35;
+     padding-top: 62px;
+     /*margin-bottom: 35px;*/
+ }
+.f_about{
     float: left;
     display: inline-block;
     margin-right: 138px;
@@ -200,27 +299,6 @@ footer form input{
     margin-bottom: 9px;
     font-family: 'Open Sans';
     background: transparent;
-}
-.what_clients_say{
-    background-color: #f7f7f7;
-    padding-top: 93px;
-    padding-bottom: 93px;
-    text-align: center;
-}
-.what_clients_say p{
-    max-width: 690px;
-    margin: auto;
-}
-.owl-nav .owl-prev:before {
-    content: "\f054";
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    bottom: 231px;
-}
-.owl-nav .owl-prev{
-    font-family: 'Font Awesome 5 Free'!important;
-    font-weight: 900!important;
 }
 footer .container form button{
     width: 100%;
@@ -276,19 +354,3 @@ footer .bottom_footer .last_text a:hover:after{
     background-color: #b5a263;
     color: #f9f8f5;
 }
-/*footer .bottom_footer .social{
-    float: right;
-    background: transparent;
-    border: solid 1px #5f636a;
-    line-height: 25px;
-    height: 28px;
-    width: 25px;
-    border-radius: 20px;
-    text-align: center;
-    display: inline-block;
-    margin-left: 8px;
-}
-footer .bottom_footer .last_text .social i{
-    color: #6e7279;
-    font-size: 13px;
-}*/
