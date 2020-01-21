@@ -354,3 +354,21 @@ footer .bottom_footer .last_text a:hover:after{
     background-color: #b5a263;
     color: #f9f8f5;
 }
+
+.ui-accordion .ui-accordion-header{
+    margin: 0 0 3px 0;
+    padding: 33px 0 30px;
+    background-color: #fce7f2;
+    font-size: 35px;
+    color: #860da6;
+    border: none;
+    outline: none;
+}
+.ui-accordion .ui-accordion-header.ui-state-active{
+    background-color: #fef5fa;
+    margin-bottom: 0;
+}
+.ui-accordion .ui-accordion-content{
+    background-color: #fef5fa;
+    border: none;
+}
