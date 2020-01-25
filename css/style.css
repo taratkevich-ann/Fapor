@@ -50,7 +50,8 @@ header nav ul li{
     padding-top: 3px;
     padding-bottom: 33px;
 }
-.container:after, header nav ul:after, .management .user .details:after, .f_about:after, .f_about:after,  form:after{
+.container:after, header nav ul:after, .management .user .details:after, .f_about:after, .f_about:after,  form:after, .login_bg .left_side form  button:after,
+.login_bg .left_side form a:after{
     content: "";
     display: block;
     clear: both;
@@ -158,9 +159,6 @@ p.blue_bg{
     font-size: 12px;
     color: white;
 }
-
-
-
 .what_clients_say{
     background-color: #f7f7f7;
     padding-top: 93px;
@@ -210,34 +208,6 @@ p.blue_bg{
 .what_clients_say .container p:last-child{
     margin-bottom: 91px;
 }
-/*.owl-nav .owl-prev {
-    margin: -246px 5px;
-    position: absolute;
-    left: 0;
-    color: black!important;
-    font-family: "Font Awesome\ 5 Free"!important;
-    font-weight: 900!important;
-}
-.owl-nav .owl-prev:before{
-    content: "\f053";
-    display: inline-block;
-    color: black!important;
-}
-
-.owl-nav .owl-next {
-    color: black!important;
-    margin: -246px 5px;
-    font-family: "Font Awesome\ 5 Free"!important;
-    font-weight: 900!important;
-    position: absolute;
-    right: 0;
-}
-.owl-nav .owl-next:after{
-    content: "\f054";
-    display: inline-block;
-    color: black!important;
-}*/
-
 .owl-nav .owl-prev, .owl-nav .owl-next{
     font-family: 'Font Awesome 5 Free'!important;
     font-weight: 900!important;
@@ -262,7 +232,7 @@ footer{
      background-color: #2b2f35;
      border-top: solid 1px #2b2f35;
      padding-top: 62px;
-     /*margin-bottom: 35px;*/
+
  }
 .f_about{
     float: left;
@@ -309,7 +279,23 @@ footer .container form button{
     font-size: 14px;
     font-family: 'Open Sans';
     border: none;
+    margin-bottom: 5px;
 }
+footer .container form a{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #4a4e55;
+    text-decoration: none;
+}
+
+
+
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable{
+}
+
+
+
+
 footer .bottom_footer{
     background-color: #24282f;
     border-top: solid 1px #2b2f35;
@@ -324,10 +310,10 @@ footer .bottom_footer .last_text p{
 footer .bottom_footer .last_text .social{
     display: inline-block;
     float: right;
-    margin-top: 13px;
+    margin-top: 18px;
 }
 footer .bottom_footer .last_text .social a:after{
-    content: "\f39e" /*"\f099" "\f0d5" "\f17d"*/;
+    content: "\f39e";
     font-family: Font Awesome\ 5 Brands;
     font-weight: 900;
     display: inline-block;
@@ -355,9 +341,16 @@ footer .bottom_footer .last_text a:hover:after{
     color: #f9f8f5;
 }
 
+
+
+
+
+
+
 .ui-accordion .ui-accordion-header{
     margin: 0 0 3px 0;
-    padding: 33px 0 30px;
+    padding: 33px 0 30px 20px;
+    max-width: 1185px;
     background-color: #fce7f2;
     font-size: 35px;
     color: #860da6;
@@ -368,7 +361,114 @@ footer .bottom_footer .last_text a:hover:after{
     background-color: #fef5fa;
     margin-bottom: 0;
 }
+.ui-accordion .ui-accordion-header.ui-state-active span:before{
+    content: "\f078";
+}
+.ui-accordion  h3:before{
+    content: '';
+    display: block;
+    width: 3px;
+    height: 3px;
+    border-radius: 3px;
+    position: relative;
+    right: 11px;
+    top: 21px;
+    background-color: #860da6;
+}
 .ui-accordion .ui-accordion-content{
     background-color: #fef5fa;
     border: none;
+}
+.ui-icon{
+    position: absolute;
+    right: 43px;
+    top: 42px;
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    background-image: none!important;
+    background-position: 0!important;
+    text-indent: inherit;
+    width: auto;
+    height: auto;
+    font-size: 27px;
+    color: #231f20;
+}
+.ui-icon:before {
+    content: "\f054";
+}
+
+
+/*login page*/
+.login_bg{
+    background-image: url("../images/bg_login.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 420px;
+}
+.left_side{
+    float: left;
+    max-width: 480px;
+    width: 100%;
+}
+.right_side{
+    float: right;
+    max-width: 450px;
+    width: 100%;
+}
+.left_side h4{
+    font: 11px/11px 'Open Sans';
+    color: #434343;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+.left_side h4:nth-child(2):after{
+    content: '';
+    display: block;
+    width: 110px;
+    background-color: black;
+    height: 1px;
+    margin-top: 34px;
+    margin-bottom: 6px;
+}
+.login_bg .left_side .form_group{
+    max-width: 450px;
+}
+.login_bg .left_side form .form_group label{
+    font: 11px/11px 'Open Sans';
+    color: #434343;
+    margin-bottom: 16px;
+    display: block;
+    width: 100%;
+}
+.login_bg .left_side form .form_group input{
+    width: 100%;
+    margin-bottom: 36px;
+    border: 0;
+    line-height: 31px;
+}
+.login_bg .left_side form .form_group input:last-child{
+    margin-bottom: 48px;
+}
+.login_bg .left_side form  button{
+    background-color: #e7cfa6;
+    font: 11px/11px 'Open Sans';
+    color: #434343;
+    border: none;
+    padding: 0 67px 0 79px;
+    line-height: 37px;
+    border-radius: 20px;
+    float: left;
+}
+.login_bg .left_side form a{
+    font: 10px/10px 'Open Sans';
+    color: #434343;
+    float: right;
+    line-height: 37px;
+}
+.login_bg .right_side h4 {
+    font: 11px/11px 'Open Sans';
+    color: #434343;
+    font-weight: 600;
 }
