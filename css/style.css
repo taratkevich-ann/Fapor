@@ -379,7 +379,6 @@ footer .container form a{
     position: relative;
     right: 14px;
 }
-
 footer .bottom_footer{
     background-color: #24282f;
     border-top: solid 1px #2b2f35;
@@ -500,6 +499,8 @@ footer .bottom_footer .last_text a:hover:after{
     float: right;
     max-width: 450px;
     width: 100%;
+    text-transform: uppercase;
+
 }
 .left_side h4{
     font: 11px/11px 'Open Sans';
@@ -519,23 +520,25 @@ footer .bottom_footer .last_text a:hover:after{
 .login_bg .left_side .form_group{
     max-width: 450px;
 }
-.login_bg .left_side form .form_group label{
+.login_bg .left_side form .form_group label, .ui-tabs .ui-tabs-panel label{
     font: 11px/11px 'Open Sans';
     color: #434343;
     margin-bottom: 16px;
     display: block;
     width: 100%;
 }
-.login_bg .left_side form .form_group input{
+.login_bg .left_side form .form_group input, .ui-widget  input{
     width: 100%;
-    margin-bottom: 36px;
+    margin-bottom: 37px;
     border: 0;
+    font: 11px/11px 'Open Sans';
     line-height: 31px;
+    outline: none;
 }
 .login_bg .left_side form .form_group input:last-child{
     margin-bottom: 48px;
 }
-.login_bg .left_side form  button{
+.login_bg .left_side form  button, .ui-widget button{
     background-color: #e7cfa6;
     font: 11px/11px 'Open Sans';
     color: #434343;
@@ -544,6 +547,8 @@ footer .bottom_footer .last_text a:hover:after{
     line-height: 37px;
     border-radius: 20px;
     float: left;
+    text-transform: uppercase;
+    outline: none;
 }
 .login_bg .left_side form a{
     font: 10px/10px 'Open Sans';
@@ -555,4 +560,68 @@ footer .bottom_footer .last_text a:hover:after{
     font: 11px/11px 'Open Sans';
     color: #434343;
     font-weight: 600;
+    margin-bottom: 40px;
+}
+.ui-tabs{
+    padding: 0;
+    font: 11px/11px 'Open Sans';
+    border-radius: 0!important;
+    border: none!important;
+    max-width: 449px;
+}
+.ui-widget-header{
+    background-color: white;
+    border:none;
+    border-radius: 0;
+
+}
+.ui-tabs .ui-tabs-nav{
+    padding: 0;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor{
+    padding: 0 26px 0 22px;
+    line-height: 35px;
+    outline: 0;
+}
+.ui-tabs .ui-tabs-nav li {
+    border: none!important;
+    border-radius: 0!important;
+    font: 11px/11px 'Open Sans';
+    color: #d2d2d2!important;
+    background-color: white;
+    border-bottom: 3px solid #e5e5e5!important;
+    margin-right: 5px;
+}
+
+li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-active{
+    background-color: #e7cfa6;
+    color: white;
+    border-bottom: none!important;
+}
+
+li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-active:after{
+    content: '';
+    display: block;
+    background-color: black;
+    rotation: 90deg;
+}
+.ui-tabs .ui-tabs-panel{
+    padding: 37px 0 0;
+}
+.ui-widget  input{
+    background-color: #f6f6f6;
+}
+.ui-widget  input:nth-child(4){
+    margin-bottom: 43px;
+}
+.ui-widget  input:nth-child(5){
+    background-color: #fbf7f1;
+    margin-bottom: 48px;
+}
+.ui-widget  input:last-of-type{
+    margin-bottom: 41px;
+    background-color: #fbf7f1;
+}
+.ui-widget button{
+    padding: 0 55px;
 }
