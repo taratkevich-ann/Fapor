@@ -286,15 +286,99 @@ footer .container form a{
     font-size: 14px;
     color: #4a4e55;
     text-decoration: none;
+    cursor: pointer;
 }
-
-
-
-.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable{
+.ui-dialog{
+    max-width: 750px!important;
+    width: 100%!important;
+    border: none!important;
+    border-radius: 0 0 6px 6px;
+    background-color: #fbfbfb;
+    padding: 0 0 165px 0;
+    position: absolute;
+    top: 1227px!important;
+    box-sizing: border-box;
 }
-
-
-
+.ui-dialog .ui-dialog-titlebar-close, .ui-icon:before{
+    display: none;
+}
+.ui-draggable .ui-dialog-titlebar {
+    cursor: auto!important;
+}
+.ui-dialog .ui-widget-header{
+    border: none!important;
+    border-radius: 0!important;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 41px 0;
+}
+.ui-dialog .ui-widget-content{
+    resize: none!important;
+}
+.ui-dialog form{
+    padding: 40px 93px 0 85px;
+    box-sizing: border-box;
+}
+.ui-dialog form label{
+    float: left;
+    display: inline-block;
+    font-size: 22px;
+    color: #363636;
+    line-height: 30px;
+    max-width: 138px;
+    text-align: center;
+}
+.ui-dialog form input{
+    display: inline-block;
+    float: right;
+    max-width: 382px;
+    border: 1px solid #b7b7b7;
+    border-radius: 3px;
+    outline: none;
+    line-height: 58px;
+    margin-bottom: 40px;
+}
+.ui-dialog form button{
+    display: block;
+    font-size: 22px;
+    line-height: 60px;
+    max-width: 527px;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    background-color: #d2d2d2;
+    font-weight: 700;
+    margin: 0 auto 30px;
+}
+.ui-dialog form p{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.ui-dialog form a{
+    line-height: 60px;
+    max-width: 527px;
+    background-color: #5479c9;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    border-radius: 3px;
+    text-align: center;
+}
+.ui-dialog form a:before{
+    content: "\f39e";
+    font-family: Font Awesome\ 5 Brands;
+    font-weight: 900;
+    color: white;
+    font-size: 23px;
+    position: relative;
+    right: 14px;
+}
 
 footer .bottom_footer{
     background-color: #24282f;
@@ -346,7 +430,7 @@ footer .bottom_footer .last_text a:hover:after{
 
 
 
-
+/*faq file*/
 .ui-accordion .ui-accordion-header{
     margin: 0 0 3px 0;
     padding: 33px 0 30px 20px;
