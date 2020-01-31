@@ -331,6 +331,11 @@ footer .container form a{
     max-width: 138px;
     text-align: center;
 }
+.ui-dialog form .form_dialog:after{
+    content: "";
+    clear: both;
+    display: block;
+}
 .ui-dialog form input{
     display: inline-block;
     float: right;
